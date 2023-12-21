@@ -23,9 +23,7 @@ function Login() {
   };
 
   useEffect(() => {
-    if (loginResponse) {
-      navigate('/');
-    }
+    navigate('/');
   }, [dispatch, loginResponse, navigate]);
 
   const handleSubmit = async (event) => {
